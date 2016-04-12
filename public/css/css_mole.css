@@ -1,0 +1,110 @@
+body    {
+    background: linear-gradient(to bottom right, green, #003300);
+    background-image: url('/img/grass.jpg');
+    cursor: url('/bill.png');
+}
+.square    {
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    background-image: url("/img/golf.png");
+    border-radius: 50%;
+}
+
+/*#square1 {
+margin-top: 20px;
+  
+}*/
+
+#square2 {
+    margin-left: 200px;
+}
+
+#square3 {
+    margin-left: 400px;
+}
+
+#square4 {
+    margin-top: 200px;
+}
+
+#square5 {
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+#square6 {
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+#square7 {
+    margin-top: 400px;
+}
+
+#square8 {
+    margin-left: 200px;
+    margin-top: 400px;
+}
+
+#square9 {
+    margin-top: 400px;
+    margin-left: 400px;
+}
+
+#start  {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    margin-top: 200px;
+    border-radius: 20px;
+    border-color: none;
+}
+#score  {
+    position: absolute;
+    margin-left: 45px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.molePeek   {
+    background-color: red;
+}
+
+#timer  {
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -10px;
+    color: white;
+}
+
+#game_box   {
+    height: 520px;
+    width: 600px;
+    cursor: url("/css/bill.png"), default;
+
+}
+
+.popUp  {
+    display: none;
+    margin-left: -5px;
+    position: absolute;
+    margin-top: -35px;
+}
+
+.button_box {
+    height: 300px;
+    width: 100px;
+    background-color:rgba(82,47,11,0.5);
+
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -500px;
+    border-radius: 20px;
+}
+
+#time_logo  {
+    margin-top: 80px;
+}
