@@ -17,11 +17,13 @@ $(function(){
     });
 
     // This resets the timer if it equals 0 and runs 
-    // the random and play function
+    // the random and play function I put the high 
+    // score if statement in the function because I 
+    // wanted it update in real time
     function startGame() {
         if (score > highScore) {
             $('#high_score').html(score);
-            ++ highScore;
+            highScore ++;
         } else  {
             $('#high_score').html(highScore);
         };
@@ -32,6 +34,9 @@ $(function(){
         };
     };
     
+    function highScoreCount ()  {
+
+    }
     // This updates the timer on screen and renables the start
     // button if it reaches 0.
     function updateTimer(){
