@@ -59,7 +59,7 @@ body    {
 
 #start  {
     background-color: transparent;
-    border-color: none;
+    border: none;
     border-radius: 20px;
     height: 50px;
     margin-top: 200px;
