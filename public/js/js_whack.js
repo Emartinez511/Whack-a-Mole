@@ -11,7 +11,7 @@ $(function(){
 
     // THIS IS THE START BUTTON
     $("#start").click (function(){
-        detonationTimer = 10;
+        detonationTimer = 30;
         startGame();
         score = 0;
         $(this).attr("disabled", true);
@@ -23,7 +23,7 @@ $(function(){
     function startGame() {
         if (score > highScore) {
             $('#high_score').html(score);
-            highScore ++;
+            ++ highScore;
         } else  {
             $('#high_score').html(highScore);
         };
@@ -57,7 +57,7 @@ $(function(){
 
     function play () {
         $("#score").text(score);
-        var intervalId = setInterval(myTimer, 1000);
+        var intervalId = setInterval(myTimer, 500);
         var timer = setTimeout(updateTimer, 1000);
         function myTimer(){
             moleShow($("#" + molesClick));
@@ -80,7 +80,7 @@ $(function(){
         square.css("display", "block");
         setTimeout(function () {
             square.css("display", "none");
-        }, 1000);
+        }, 1100);
     };
 
 

@@ -1,5 +1,5 @@
 body    {
-    cursor: url('/bill.png');
+    /*cursor: url('/bill.png');*/
     background: linear-gradient(to bottom right, green, #003300);
     background-image: url('/img/grass.jpg');
 }
@@ -34,7 +34,7 @@ body    {
 }
 
 #game_box   {
-    cursor: url("/css/bill.png"), default;
+    cursor: url("/css/bill.png") 5 30, default;
     height: 520px;
     width: 600px;
 }
