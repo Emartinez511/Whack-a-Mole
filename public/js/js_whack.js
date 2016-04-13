@@ -1,7 +1,6 @@
 $(function(){
  "use strict"
 
-
     var molesClick= [];
     var $popUp = $(".popUp")
     var detonationTimer = 0;
@@ -16,7 +15,6 @@ $(function(){
         score = 0;
         $(this).attr("disabled", true);
     });
-
 
     // This resets the timer if it equals 0 and runs 
     // the random and play function
@@ -46,14 +44,12 @@ $(function(){
         detonationTimer--;
     };
 
-
     function randomNumber() {
         var random = Math.floor(Math.random() * $(".square").length);
         var molePop = $popUp[random];
         var id = molePop.id;
         molesClick.push(id);
     };
-
 
     function play () {
         $("#score").text(score);
@@ -65,7 +61,6 @@ $(function(){
             startGame();
         }; 
     };
-
 
     // This function shows if it had the an img and display block enabled
     // it then turns the display none and adds to score.
@@ -82,6 +77,4 @@ $(function(){
             square.css("display", "none");
         }, 1000);
     };
-
-
  })();
