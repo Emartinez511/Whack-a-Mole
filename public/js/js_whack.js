@@ -4,10 +4,10 @@ $(function(){
 
     var molesClick= [];
     var $popUp = $(".popUp")
-    var score = 0;
     var detonationTimer = 0;
-    new Audio("/sounds/kill.mp3").play();
     var highScore = 0;
+    var score = 0;
+    new Audio("/sounds/kill.mp3").play();
 
     // THIS IS THE START BUTTON
     $("#start").click (function(){
@@ -57,7 +57,7 @@ $(function(){
 
     function play () {
         $("#score").text(score);
-        var intervalId = setInterval(myTimer, 500);
+        var intervalId = setInterval(myTimer, 1000);
         var timer = setTimeout(updateTimer, 1000);
         function myTimer(){
             moleShow($("#" + molesClick));
@@ -80,7 +80,7 @@ $(function(){
         square.css("display", "block");
         setTimeout(function () {
             square.css("display", "none");
-        }, 1100);
+        }, 1000);
     };
 
 
