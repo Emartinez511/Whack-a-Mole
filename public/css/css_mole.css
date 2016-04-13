@@ -68,7 +68,7 @@ body    {
 }
 
 #score  {
-    color: #FF0000;
+    color: white;
     margin-left: 45px;
     position: absolute;
     font-size: 20px;
@@ -112,7 +112,7 @@ body    {
 }
 
 #timer  {
-    color: #FF0000;
+    color: white;
     font-size: 25px;
     font-weight: bold;
     margin-left: 40px;
