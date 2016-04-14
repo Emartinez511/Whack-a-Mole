@@ -21,12 +21,7 @@ $(function(){
     // score if statement in the function because I 
     // wanted it update in real time
     function startGame() {
-        if (score > highScore) {
-            $('#high_score').html(score);
-            highScore ++;
-        } else  {
-            $('#high_score').html(highScore);
-        };
+        highScoreCount ();
         if (detonationTimer > 0){
             molesClick = [];
             randomNumber();
@@ -34,9 +29,15 @@ $(function(){
         };
     };
     
-    function highScoreCount ()  {
+    function highScoreCount ()  {   
+        if (score > highScore) {
+            $('#high_score').html(score);
+            ++ highScore;
+        } else  {
+            $('#high_score').html(highScore);
+        };
+    };
 
-    }
     // This updates the timer on screen and renables the start
     // button if it reaches 0.
     function updateTimer(){
