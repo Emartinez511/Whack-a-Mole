@@ -17,9 +17,7 @@ $(function(){
     });
 
     // This resets the timer if it equals 0 and runs 
-    // the random and play function I put the high 
-    // score if statement in the function because I 
-    // wanted it update in real time
+    // the random, highScorCount, and play function.
     function startGame() {
         highScoreCount ();
         if (detonationTimer > 0){
